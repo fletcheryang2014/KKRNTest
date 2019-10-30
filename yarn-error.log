@@ -1,0 +1,33 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add react-native --exact
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Apple/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.10.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/react-native: tunneling socket could not be established, cause=socket hang up
+      at ClientRequest.onError (/usr/local/lib/node_modules/yarn/lib/cli.js:151950:17)
+      at Object.onceWrapper (events.js:299:26)
+      at ClientRequest.emit (events.js:209:13)
+      at Socket.socketOnEnd (_http_client.js:440:9)
+      at Socket.emit (events.js:214:15)
+      at endReadableNT (_stream_readable.js:1178:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {"name":"KKRNTest","version":"0.0.1","private":true,"scripts":{"start":"node node_modules/react-native/local-cli/cli.js start"}}
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
